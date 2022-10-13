@@ -41,11 +41,14 @@ int main(){
         scanf("%d%d",&p[i].at,&p[i].bt);
         p[i].pid=i+1;
         p[i].st=-1;
-        rem[i]=p[i].bt;
     }
     
     sort(p,n);
+    for(int i=0;i<n;i++)
+    { rem[i]=p[i].bt;
+    }
     int t=0,com=0;
+    
     
     int totalTAT=0,totalWT=0,cycleLength=0,idealTime;
     float avgTAT=0,avgWT=0,cpuUti=0,throughPut=0;
